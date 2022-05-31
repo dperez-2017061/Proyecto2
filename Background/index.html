@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/hoja.css">
+    <title>Background</title>
+</head>
+<body>
+    <h2 class="text-center "><i>Background: White</i></h2>
+    <button onclick="change(); colors()" type="button" class="btn btn-primary fs-5">Change Background</button>
+    
+    <script src="ntc.js"></script>
+    <script src="/js/app.js">
+    </script>
+    <script>
+        function colors() {
+            let h2 = document.querySelector('h2');
+            let name = ntc.name(h2.innerText);
+            h2.innerText = 'Background: '+ name[1]; 
+        }
+    </script>
+
+</body>
+</html>
